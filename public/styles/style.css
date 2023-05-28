@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion-item {
+  background-color: #ffffff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(6, 6, 6, 0.397);
+  
+}
+
+.accordion-color{
+  border-radius: 0.4rem 0.4rem 0 0;
+  height: 1rem;
+  width: 100%;
+  
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+
+/*.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+*/
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.container-crear{
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+}
+
+.button{
+  display: block;
+  text-decoration: none;
+  background-color: #359ded;
+  color: rgb(44, 44, 44);
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+  font-size: 30px;
+  transition: all 500ms ease;
+  font-weight: 800;
+  border-color: #359ded;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: #2673ad;
+  border-color: #2673ad;
+  color: #d1d1d1;
+}
+
+#div-color{
+  transition: background-color 0.4s;
+  height: 20px;
+  margin-bottom: 3px;
+  margin-top: 5px;
+  border-radius: 0.375rem;
+}
+
+#div-color-edit{
+  transition: background-color 0.4s;
+  height: 20px;
+}
+
+form ul {
+  list-style: none;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-gap: 20px;
+}
+
+form ul li {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+
+}
+
+form ul li:hover{
+  transform: scale(1.1);
+}
+
+#white {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #bababa;
+}
+
+#red {
+  background-color: #AF5B5B;
+}
+
+#green {
+  background-color: #A9E190;
+}
+
+#blue {
+  background-color: #183059;
+}
+
+#violet {
+  background-color: #A28497;
+}
+
+#pink{
+  background-color: #F48498;
+}
+
+#div-color.white{
+  background-color: #ffffff;
+}
+
+#div-color.red{
+  background-color: #AF5B5B;
+}
+
+#div-color.green{
+  background-color: #A9E190;
+}
+
+#div-color.blue{
+  background-color: #183059;
+}
+
+#div-color.violet{
+  background-color: #A28497;
+}
+
+#div-color.pink{
+  background-color: #F48498;
+}
+/*
+#div-color-edit.red{
+  background-color: #AF5B5B;
+}
+
+#div-color-edit.green{
+  background-color: #A9E190;
+}
+
+#div-color-edit.blue{
+  background-color: #183059;
+}
+
+#div-color-edit.violet{
+  background-color: #A28497;
+}
+
+#div-color-edit.pink{
+  background-color: #F48498;
+}
+*/
+
+.right {
+  position: absolute !important;
+  right: 1rem;
+}
+
+.accordion-table{
+  position: relative;
+}
+
+.right-3 {
+  position: absolute !important;
+  right: 3rem;
+}
+
+.right-x {
+  position: absolute;
+  right: 4rem;
+  top: 1.5rem;
+  cursor: pointer;
+}
+
+.right-a {
+  position: absolute;
+  right: 7rem;
+  top: 1.5rem;
+  cursor: pointer;
+}
+
+.right-subx {
+  position: absolute;
+  right: 5rem;
+  top: 1rem;
+  cursor: pointer;
+}
+
+.btn-crear{
+  margin: 5px;
+  background-color: #2673ad !important;
+  color: white !important;
+}
+
+a{
+  text-decoration: none;
+  color: #111 !important;
+}
+
+.btn-opcion{
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
